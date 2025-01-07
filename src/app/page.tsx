@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useRef, ChangeEvent } from "react";
 
 import { ClipLoader } from "react-spinners";
@@ -91,7 +92,7 @@ export default function Home() {
 				{selectedImage && (
 					<div className="mb-4">
 						<p className="text-gray-700 mb-2">Selected Image:</p>
-						<img
+						<Image
 							src={selectedImage || placeholderImage}
 							alt={
 								selectedImage
